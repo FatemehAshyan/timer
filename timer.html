@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en,per">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="timer time countdown زمان ساعت زمان سنج">
+    <meta autor="Fatemeh Sadat Ashyan"  >
+    <meta name="keyword" content="timer time">
+    <title>timer</title>
+    <link rel="icon" href="icon.jfif"/>
+    <link rel="stylesheet" href="timer.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h3 id="error"></h3>
+        زمان را انتخاب کنید و شروع کنید
+    </header>
+    <form id="time">
+        <input type="number" id="hour" class="scarf" min="0" max="59" value="0" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+    type = "number" onchange="setHour(value)"
+    maxlength = "1"></input>
+        <span>:</span>
+        <input type="number" id="min" class="scarf" min="0" max="59" value="0" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+    type = "number" onchange="setMin(value)"
+    maxlength = "2"></input>
+        <span>:</span>
+        <input type="number" id="sec" class="scarf" min="0" max="59" value="0" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+    type = "number" onchange="setSec(value)"
+    maxlength = "2"></input>
+    </form><br/>
+    <div>
+        <button onclick="start()">شروع</button>
+        <button onclick="reset()">ریست</button>
+        <button onclick="stop()">توقف</button>
+    </div>
+    <script src="timer.js"></script>
+</body>
+</html>

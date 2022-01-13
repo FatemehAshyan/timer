@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  background-image: url(back.jpg);
+  font-family: "Noto Sans Arabic", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  font-size: x-large;
+  width: 100%;
+  color: rgb(5, 5, 63);
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: space-around;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  margin-bottom: 20px;
+}
+form {
+  /* From https://css.glass */
+  background: rgba(97, 240, 149, 0.34);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.3px);
+  -webkit-backdrop-filter: blur(5.3px);
+  border: 1px solid rgba(97, 240, 149, 0.18);
+  width: min(500px, 100%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 250px;
+}
+span {
+  font-size: xx-large;
+  color: rgb(0, 201, 251);
+}
+.scarf {
+  background-color: rgba(0, 204, 255, 0.603);
+  width: min(130px, 100%);
+  height: 70%;
+  border-radius: 10px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  font-size: 72px;
+  color: rgb(23, 5, 126);
+  border: none;
+}
+button {
+  height: 80px;
+  width: 140px;
+  font-size: 30px;
+  background: rgba(1, 87, 98, 0.336);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.3px);
+  -webkit-backdrop-filter: blur(5.3px);
+  border: 1px solid rgba(0, 255, 94, 0.432);
+  color: rgb(250, 252, 251);
+  font-family: "Noto Sans Arabic", sans-serif;
+}
+div {
+  display: inline;
+}
+h1 {
+  display: inline;
+  color: brown;
+  background: rgba(250, 67, 67, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  margin-bottom: 20px;
+  float: left;
+}
+/* media for 250px because in this width not work */
+@media screen and (max-width:250px) {
+  .scarf {
+    font-size: 50px;
+  }
+}
